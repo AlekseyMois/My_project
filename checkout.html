@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформить заявку</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/checkout.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header static">
+    <img class="header__logo" src="/images/logo.png" alt="logo">
+    <nav>
+      <a class="header__link" href="/">Главная</a>
+      <a class="header__link active" href="/checkout.html">Оформить заказ</a>
+    </nav>
+    <div class="header__menu">
+      <img src="./images/menu.svg" alt="menu" id="mobile-icon">
+      <div class="header__menu__list">
+        <a class="header__link" href="/">Главная</a>
+        <a class="header__link active" href="/checkout.html">Оформить заказ</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main checkout">
+    <div class="container inherit">
+
+      <form action="#">
+        <div class="form">
+          <span class="form__title big">
+            Оставьте заявку
+          </span>
+          <span class="form__title normal">
+            И мы свяжемся с вами!
+          </span>
+          <input class="form__input" name="name" type="text" placeholder="Введите ваше имя">
+          <input class="form__input" name="phone" type="tel" placeholder="Введите ваш телефон">
+          <input class="form__input" name="email" type="email" placeholder="Введите ваш email">
+          <!-- Добавить input -->
+          <button class="form__submit">Отправить</button>
+          <button class="form__reset" type="reset">Очистить форму</button>
+        </div>
+      </form>
+
+      <div class="social">
+        <div class="social__list">
+          <!-- Добавить свою ссылку на соц сеть -->
+          <a href="https://t.me/electrosamokati" target="_blank">
+            <img src="./images/telegram.svg" alt="telegram">
+          </a>
+          <a href="https://wa.me/89241234567" target="_blank">
+            <img src="./images/whatsapp.svg" alt="whatsapp">
+          </a>
+        </div>
+        <img src="./images/plus.svg" alt="social-menu" id="social-icon">
+      </div>
+
+      <div class="contacts">
+        <span class="contacts__title">
+          Наши контакты
+        </span>
+        <div class="contacts__container">
+          <span>
+            г. Хабаровск, ул. Пионерская 1, корпус 5, 3 этаж
+          </span>
+          <div>
+            <span>
+              +7(924)123-45-67
+            </span>
+            <span>
+              +7(4212)12-34-56
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input {
+  border: none;
+  background-color: inherit;
+  outline:none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px 20px 20px;
+}
+
+.header__link {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.header__link:nth-child(1) {
+  margin-right: 45px;
+}
+
+.header__menu {
+  position: relative;
+  display: none;
+}
+
+.header__menu__list {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 162px;
+  background: #838383;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  padding: 16px;
+}
+
+.main {
+  display: flex;
+}
+
+.container {
+  width: 413px;
+  padding: 103px 33px 0;
+}
+
+.contacts {
+  padding-top: 52px;
+  padding-bottom: 20px;
+}
+
+.contacts__title {
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.contacts__container > div {
+  text-align: right;
+}
+
+.visible {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .container {
+    width: 100%;
+    padding-top: 35px;
+  }
+
+  .header > nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  .header__link {
+    color: white;
+  }
+
+  .contacts__title {
+    display: none;
+  }
+
+  .contacts__container {
+    gap: 50px;
+  }
+
+  .contacts__container > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 35px;
+  }
+}
+
+@media (max-width: 376px) {
+  .container {
+    padding: 25px 20px 0;
+  }
+
+  .header {
+    padding: 8px;
+  }
+
+  .header > nav {
+    display: none;
+  }
+
+  .header__link {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .header__logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .header__menu {
+    display: block;
+  }
+
+  .contacts__container {
+    gap: 0;
+  }
+  
+  .contacts__container > div {
+    display: block;
+  }
+}
